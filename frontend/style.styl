@@ -1,0 +1,41 @@
+@import './fonts/stylesheet.css'
+
+*
+  -webkit-tap-highlight-color transparent
+  outline none
+
+html,
+body
+  height 100%
+  margin 0
+  padding 0
+  color #fff
+
+body
+  overflow-y scroll
+
+a
+  text-decoration none
+  color #fff
+
+body.openmenu
+  overflow hidden
+  header
+    position fixed
+    top 0
+    right 0
+    bottom 0
+    left 0
+    z-index 100
+    overflow-y scroll
+    transform translateZ(300px)
+
+ #content
+  width 100%
+
+.hide-mobile
+  +width-lessthan(767)
+    display none
+.show-mobile
+  +width-morethan(767)
+    display none

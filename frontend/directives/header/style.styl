@@ -1,0 +1,47 @@
+
+.header
+  background #000
+  border-bottom 2px solid #fff
+  // height em(82, 20)
+  font-size rem(20, 20)
+  padding rem(32,20) rem(27,20)
+  clearfix()
+  z-index 10
+  position fixed
+  left 0
+  right 0
+  top 0
+  transform translateZ(250px)
+
+  +width-lessthan(1024)
+    padding-top 33px
+    padding-bottom 31px
+
+  +width-lessthan(768)
+    padding-top 24px
+    padding-bottom 22px
+
+  &.static
+    position static
+    +width-lessthan(1024)
+      position fixed
+
+  &__social
+    float right
+    clearfix()
+    +width-lessthan(1024)
+      display none
+
+  &__fb
+    float left
+    imgboxrem './images/fb.svg', 26
+    margin-right rem(15,20)
+  &__yt
+    float left
+    margin-top rem(4,20)
+    imgboxrem './images/yt.svg', 26
+    margin-right rem(15,20)
+  &__ig
+    float left
+    margin-top rem(1,20)
+    imgboxrem './images/ig.svg', 26
